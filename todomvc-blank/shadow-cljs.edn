@@ -1,0 +1,38 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ [[rum "0.12.3"]
+  [com.taoensso/sente "1.16.0"]
+  [inflections "0.13.2"]]
+
+ :builds
+ {:dev
+  {:target :browser
+   :output-dir "resources/public/apps"
+   :asset-path "/apps"
+   :externs ["resources/externs/general-externs.js"]
+   :devtools
+   {:watch-dir "resources/public"}
+
+   :compiler-options
+   {:warnings {:infer-warning false}
+    :warnings-as-errors false}
+
+   #_#_:closure-defines
+   {"shadow.cljs.devtools.client.env.ssl" true}
+
+   :http
+   {:proxy-rewrite-host-header false
+    :proxy-reuse-x-forwarded true}
+
+
+   :modules
+   {:cljs-base
+    {:goog-base true}
+
+    :dev
+    {:entries [todomvc.init]
+     :after-load todomvc.init/refresh
+     :depends-on #{:cljs-base}}}}}}
