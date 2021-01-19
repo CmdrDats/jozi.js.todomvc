@@ -1,0 +1,8 @@
+.idea
+*/.idea
+*/target
+*/*.iml
+*/resources/public/apps
+*/node_modules
+*/.shadow-cljs/
+/todomvc/
