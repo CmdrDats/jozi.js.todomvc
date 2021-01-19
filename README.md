@@ -1,6 +1,6 @@
 # todomvc
 
-Jozi.js todomvc: https://app.pitch.com/app/todomvc/43f3603f-1282-4d32-9c9e-98ece5840d4f/f109480e-3da4-40c5-a5e3-5ed0cba6b376
+Jozi.js todomvc: https://app.pitch.com/app/presentation/43f3603f-1282-4d32-9c9e-98ece5840d4f/f109480e-3da4-40c5-a5e3-5ed0cba6b376
 
 
 
